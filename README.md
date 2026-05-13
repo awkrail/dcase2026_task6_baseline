@@ -153,3 +153,39 @@ This code is based on [lighthouse](https://github.com/line/lighthouse).
 taichitary@gmail.com
 
 hokuto.munakata@lycorp.co.jp
+-------------------------------------------------------------------------------------------------
+## M2D-CLAPへの置き換え
+
+### 追加パッケージのインストール
+```bash
+pip install yt-dlp
+pip install --upgrade timm
+pip install sentence_transformers nnAudio
+```
+
+### m2dリポジトリのcloneとチェックポイントのダウンロード
+```bash
+git clone https://github.com/nttcslab/m2d.git /data/miyamoto/m2d
+cd /data/miyamoto/m2d
+wget https://github.com/nttcslab/m2d/releases/download/v0.5.0/m2d_clap_vit_base-80x1001p16x16p16kpBpTI-2025.zip
+unzip m2d_clap_vit_base-80x1001p16x16p16kpBpTI-2025.zip
+```
+
+### 音声ダウンロード
+CASTELLAの音声ファイルをYouTubeからダウンロードします。
+```bash
+python download_audio.py
+```
+
+### 特徴量抽出
+ダウンロード完了後に実行してください。
+```bash
+python src/extract_m2d_features.py --split train
+python src/extract_m2d_features.py --split val
+python src/extract_m2d_features.py --split test
+```
+
+### 学習
+```bash
+python src/train.py --config config.yml
+```
