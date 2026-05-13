@@ -153,7 +153,7 @@ This code is based on [lighthouse](https://github.com/line/lighthouse).
 taichitary@gmail.com
 
 hokuto.munakata@lycorp.co.jp
--------------------------------------------------------------------------------------------------
+
 ## M2D-CLAPへの置き換え
 
 ### 追加パッケージのインストール
@@ -178,7 +178,11 @@ unzip m2d_clap_vit_base-80x1001p16x16p16kpBpTI-2025.zip
 ### 音声ダウンロード
 CASTELLAの音声ファイルをYouTubeからダウンロードします。
 ```bash
-python download_audio.py
+# バックグラウンドでダウンロードを実行
+nohup python download_audio.py > download_log.txt 2>&1 &
+
+# 進捗確認
+tail download_log.txt
 ```
 https://zenodo.org/records/18358706
 ←ここにCLAPの特徴量(.npz)だけが置いてある。元の音声ファイルは著作権の関係でYouTubeから各自ダウンロードする必要がある
