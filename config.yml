@@ -58,10 +58,10 @@ max_a_l: 300
 
 # feature-specific config 
 ctx_mode: audio_tef
-a_feat_dir: features/castella/clap
-t_feat_dir: features/castella/clap_text
-a_sub_feat_dir: private/feature/clap
-t_sub_feat_dir: private/feature/clap_text
+a_feat_dir: features/castella/m2d_clap #61-64行をM2D-CLAP実行用に変更
+t_feat_dir: features/castella/m2d_clap_text
+a_sub_feat_dir: private/feature/m2d_clap
+t_sub_feat_dir: private/feature/m2d_clap_text
 a_feat_type: clap
 t_feat_type: clap
 a_feat_dim: 768
