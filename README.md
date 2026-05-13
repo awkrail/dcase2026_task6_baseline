@@ -162,12 +162,15 @@ pip install yt-dlp
 pip install --upgrade timm
 pip install sentence_transformers nnAudio
 ```
-
+```
 ### M2D-CLAPリポジトリのcloneとチェックポイントのダウンロード
 公開しているM2D-CLAPの学習済みモデルをダウンロードします。
 ```bash
-git clone https://github.com/nttcslab/m2d.git /data/miyamoto/m2d
-cd /data/miyamoto/m2d
+# 自分の作業ディレクトリに変更してください
+M2D_DIR=/data/your_username/m2d
+
+git clone https://github.com/nttcslab/m2d.git $M2D_DIR
+cd $M2D_DIR
 wget https://github.com/nttcslab/m2d/releases/download/v0.5.0/m2d_clap_vit_base-80x1001p16x16p16kpBpTI-2025.zip
 unzip m2d_clap_vit_base-80x1001p16x16p16kpBpTI-2025.zip
 ```
