@@ -185,7 +185,7 @@ nohup python download_audio.py > download_log.txt 2>&1 &
 tail download_log.txt
 ```
 https://zenodo.org/records/18358706
-←ここにCLAPの特徴量(.npz)だけが置いてある。元の音声ファイルは著作権の関係でYouTubeから各自ダウンロードする必要がある
+←ここにCLAPの特徴量(.npz)だけが置いてある。元の音声ファイルは著作権の関係かYouTubeから各自ダウンロードする必要がある
 
 ### 特徴量抽出
 ダウンロード完了後に実行してください。
