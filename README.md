@@ -180,7 +180,8 @@ CASTELLAの音声ファイルをYouTubeからダウンロードします。
 ```bash
 python download_audio.py
 ```
-https://zenodo.org/records/18358706←ここにCLAPの特徴量(.npz)だけが置いてある。元の音声ファイルは著作権の関係でYouTubeから各自ダウンロードする必要がある
+https://zenodo.org/records/18358706
+←ここにCLAPの特徴量(.npz)だけが置いてある。元の音声ファイルは著作権の関係でYouTubeから各自ダウンロードする必要がある
 
 ### 特徴量抽出
 ダウンロード完了後に実行してください。
