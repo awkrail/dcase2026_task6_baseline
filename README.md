@@ -164,6 +164,7 @@ pip install sentence_transformers nnAudio
 ```
 
 ### M2D-CLAPリポジトリのcloneとチェックポイントのダウンロード
+公開しているM2D-CLAPの学習済みモデルをダウンロードします。
 ```bash
 git clone https://github.com/nttcslab/m2d.git /data/miyamoto/m2d
 cd /data/miyamoto/m2d
@@ -176,6 +177,9 @@ CASTELLAの音声ファイルをYouTubeからダウンロードします。
 ```bash
 python download_audio.py
 ```
+https://zenodo.org/records/18358706
+↑ ここにCLAPの特徴量(.npz)だけが置いてある
+元の音声ファイルは著作権の関係でYouTubeから各自ダウンロードする必要がある
 
 ### 特徴量抽出
 ダウンロード完了後に実行してください。
