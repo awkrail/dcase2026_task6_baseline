@@ -163,7 +163,7 @@ pip install --upgrade timm
 pip install sentence_transformers nnAudio
 ```
 
-### m2dリポジトリのcloneとチェックポイントのダウンロード
+### M2D-CLAPリポジトリのcloneとチェックポイントのダウンロード
 ```bash
 git clone https://github.com/nttcslab/m2d.git /data/miyamoto/m2d
 cd /data/miyamoto/m2d
